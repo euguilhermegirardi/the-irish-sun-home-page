@@ -1,0 +1,25 @@
+.navbar {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+   .navbar__svg {
+      height: 18px;
+      width: 18px;
+   }
+
+   .navbar__icon {
+      height: 64px;
+      width: 123px;
+   }
+}
+
+.active {
+   p {
+      color: $color-red;
+   }
+
+   .menu__item-svg {
+      fill: $color-red;
+   }
+}

@@ -2,13 +2,110 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="dist/minified/main.css?cb=1593590800612" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="dist/minified/main.css?cb=1593591084082" />
       <title>The Irish Sun</title>
    </head>
    <body>
       <div class="container">
-         <h1>test</h1>
+         <nav class="navbar">
+            <img
+               class="navbar__svg"
+               src="dist/minified/assets/SVG/search.svg"
+               alt="search.svg"
+            />
+            <img
+               class="navbar__icon"
+               src="dist/minified/assets/SVG/icon.svg"
+               alt="icon.svg"
+            />
+            <img
+               class="navbar__svg navbar__dropdown"
+               src="dist/minified/assets/SVG/menu.svg"
+               alt="menu.svg"
+            />
+         </nav>
+
+         <div class="dropdown">
+            <div class="pushdown opened">
+               <div class="dropdown__content">
+                  <h4 class="dropdown__h4">Your Sun</h4>
+                  <p class="dropdown__items">Sign in</p>
+               </div>
+
+               <div class="dropdown__content">
+                  <h4 class="dropdown__h4">Editions</h4>
+                  <ul>
+                     <li class="dropdown__items">US Edition</li>
+                     <li class="dropdown__items">UK Edition</li>
+                     <li class="dropdown__items">Scottish Sun</li>
+                     <li class="dropdown__items">Dream Team</li>
+                  </ul>
+               </div>
+
+               <div class="dropdown__content">
+                  <h4 class="dropdown__h4">The Sun</h4>
+                  <div class="dropdown__content-flex">
+                     <ul class="dropdown__ul">
+                        <li class="dropdown__items">The Sun</li>
+                        <li class="dropdown__items">The Scottish Sun</li>
+                        <li class="dropdown__items">Dream Team</li>
+                        <li class="dropdown__items">Fabulous</li>
+                     </ul>
+                     <ul>
+                        <li class="dropdown__items">Sun Favorite</li>
+                        <li class="dropdown__items">Sun Motors</li>
+                        <li class="dropdown__items">Sun Bingo</li>
+                        <li class="dropdown__items">Sun Gifts</li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="dropdown__content">
+                  <h4 class="dropdown__h4">News Corp</h4>
+                  <div class="dropdown__content-flex">
+                     <ul class="dropdown__ul">
+                        <li class="dropdown__items">WSJ.com</li>
+                        <li class="dropdown__items">New York Post</li>
+                        <li class="dropdown__items">The Australian</li>
+                        <li class="dropdown__items">News.com.au</li>
+                     </ul>
+                     <ul>
+                        <li class="dropdown__items">Story</li>
+                        <li class="dropdown__items">Harper Collins</li>
+                        <li class="dropdown__items">Realtor.com</li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="dropdown__content">
+                  <h4 class="dropdown__h4">Services</h4>
+                  <div class="dropdown__content-flex">
+                     <ul class="dropdown__ul">
+                        <li class="dropdown__items">Sign Up to The Sun</li>
+                        <li class="dropdown__items">Terms and Conditions</li>
+                        <li class="dropdown__items">Editorial Complaints</li>
+                        <li class="dropdown__items">
+                           Clarifications and Corrections
+                        </li>
+                        <li class="dropdown__items">Syndication</li>
+                     </ul>
+                     <ul>
+                        <li class="dropdown__items">Advertising</li>
+                        <li class="dropdown__items">Contact Us</li>
+                        <li class="dropdown__items">Help Hub</li>
+                        <li class="dropdown__items">Cookie Settings</li>
+                        <li class="dropdown__items">Contact Preferences</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <script src="dist/minified/all.js?cb=1593590800612"></script>
+      <script src="dist/minified/all.js?cb=1593591084082"></script>
    </body>
 </html>
