@@ -1,0 +1,17 @@
+.news-slider {
+   display: block;
+   margin: 2rem auto;
+   max-width: 1320px;
+   margin: 0 auto;
+
+   .cards-carousel {
+      width: 85%;
+      margin: 0 auto;
+      overflow: hidden;
+
+      .news-slider__items {
+         margin: 0 10px;
+         display: inline-block;
+      }
+   }
+}
