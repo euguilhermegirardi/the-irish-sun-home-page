@@ -1,0 +1,26 @@
+.four-news {
+   display: flex;
+   flex-direction: column;
+   background-color: #fff;
+   padding: 0 1rem;
+
+   .four-news__container {
+      display: flex;
+      padding: 5px 0;
+      border-bottom: 2px solid #eaeeef;
+
+      .four-news__img {
+         height: 80px;
+      }
+
+      .four-news__h3 {
+         margin-left: 8px;
+         font-size: 1.3rem;
+         line-height: 1.7rem;
+
+         span {
+            color: #eb1701;
+         }
+      }
+   }
+}

@@ -1,0 +1,48 @@
+.latest {
+   display: flex;
+   flex-direction: column;
+   border-bottom: 1px solid black;
+
+   .latest__img {
+      height: 316px;
+   }
+
+   .latest__span {
+      padding: 1rem 1rem 5px;
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 1px;
+   }
+
+   .latest__h1 {
+      padding: 0px 1rem 5px;
+
+      span {
+         text-transform: uppercase;
+         font-weight: 600;
+         color: #24588c;
+      }
+   }
+
+   .latest__author {
+      padding: 0px 1rem 5px;
+      font-weight: 600;
+   }
+
+   .latest__update {
+      padding: 0px 1rem 5px;
+
+      span {
+         font-weight: 600;
+      }
+   }
+
+   .latest__icons {
+      padding: 5px 1rem 5px;
+
+      img {
+         margin-right: 2rem;
+         margin-bottom: 5px;
+      }
+   }
+}
