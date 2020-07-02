@@ -1,0 +1,47 @@
+.most-read {
+   display: flex;
+   flex-direction: column;
+   margin-top: 2rem;
+   background-color: #ccc;
+
+   margin-bottom: 10rem;
+
+   header {
+      margin: 0;
+      padding-left: 1rem;
+      background-color: #583b73;
+      color: #fff;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 37px;
+      text-transform: uppercase;
+   }
+
+   .most-read__card {
+      background-color: #fff;
+      border: none;
+      height: 19rem;
+      margin: 5px 1rem;
+
+      .most-read__img {
+         height: 80px;
+      }
+
+      .most-read__txt-content {
+         padding: 12px 10px;
+         font-weight: 500;
+         line-height: 17px;
+         font-size: 14px;
+
+         .most-read__h4 {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            color: #ccc;
+
+            span {
+               color: #9c73c1;
+            }
+         }
+      }
+   }
+}
