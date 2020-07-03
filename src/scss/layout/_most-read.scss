@@ -2,7 +2,8 @@
    display: flex;
    flex-direction: column;
    margin-top: 2rem;
-   background-color: #ccc;
+   background-color: #d6d8da;
+   height: 30rem;
 
    margin-bottom: 10rem;
 
@@ -20,11 +21,11 @@
    .most-read__card {
       background-color: #fff;
       border: none;
-      height: 19rem;
+      height: 24.5rem;
       margin: 5px 1rem;
 
       .most-read__img {
-         height: 80px;
+         height: 105.1px;
       }
 
       .most-read__txt-content {
@@ -36,7 +37,7 @@
          .most-read__h4 {
             padding-bottom: 7px;
             padding-top: 7px;
-            color: #ccc;
+            color: #222526;
 
             span {
                color: #9c73c1;
