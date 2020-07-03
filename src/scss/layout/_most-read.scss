@@ -4,8 +4,7 @@
    margin-top: 2rem;
    background-color: #d6d8da;
    height: 30rem;
-
-   margin-bottom: 10rem;
+   margin-bottom: 2.3rem;
 
    header {
       margin: 0;
@@ -45,4 +44,12 @@
          }
       }
    }
+}
+
+.most-read__header--irish-news {
+   background-color: #24588c !important;
+}
+
+.most-read__span--irish-news {
+   color: #24588c !important;
 }

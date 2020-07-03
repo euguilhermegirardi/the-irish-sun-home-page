@@ -1,0 +1,59 @@
+// @media only screen and (max-width: 675px) {
+
+.footer {
+   background-color: #2e2e33;
+   margin-top: 20px;
+   padding-bottom: 35px;
+   padding-top: 8px;
+   text-align: center;
+
+   .footer__follow {
+      margin-top: 1rem;
+
+      .footer__title {
+         font-size: 18px;
+         font-weight: 600;
+         text-transform: uppercase;
+         color: #80808c;
+      }
+
+      .footer__follow-sun {
+         .footer_svg {
+            margin: 0 1.5rem;
+            width: 12%;
+            height: 12%;
+         }
+      }
+   }
+
+   .footer__nav {
+      .footer__nav-services {
+         display: none;
+      }
+
+      .footer__menu {
+         margin: 12px 0 10px;
+
+         .footer__menu-item {
+            font-size: 14px;
+            color: #fff;
+            padding: 3px 0;
+            transition: 0.3s ease;
+         }
+      }
+   }
+
+   .footer__terms {
+      color: #80808c;
+      font-size: 11px;
+      line-height: 14px;
+
+      a {
+         color: #80808c;
+      }
+   }
+
+   .col {
+      padding: 10px;
+   }
+}

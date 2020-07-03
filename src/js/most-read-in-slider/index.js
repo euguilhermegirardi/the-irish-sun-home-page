@@ -1,7 +1,9 @@
-function mostReadSlider() {
+const sliders = document.querySelectorAll('.most-read__slider');
+
+sliders.forEach(slider => {
    tns({
       controls: false,
-      container: ".most-read__slider",
+      container: slider,
       slideBy: "page",
       items: 2,
       mouseDrag: true,
@@ -9,6 +11,4 @@ function mostReadSlider() {
       speed: 300,
       preventScrollOnTouch: "force",
    });
-}
-
-mostReadSlider();
+})
