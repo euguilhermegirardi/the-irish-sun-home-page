@@ -8,6 +8,8 @@ function slider() {
       swipeAngle: false,
       speed: 400,
       preventScrollOnTouch: "force",
+      gutter: 30,
+      autoWidth: true,
    });
 }
 
