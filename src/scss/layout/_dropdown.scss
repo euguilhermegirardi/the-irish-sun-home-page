@@ -1,33 +1,31 @@
 .dropdown {
-   height: 0;
-   transition: height, 0.5s linear;
-   position: relative;
-   overflow: hidden;
-   overflow-y: scroll;
+   display: none;
+   position: absolute;
+   left: 0;
+   top: 7rem;
+   width: 100%;
    z-index: 20;
+   overflow-y: scroll;
+   padding: 1.2rem;
    background-color: #2e2e33;
    color: #fff;
+   transition: height, 0.5s linear;
 
-   .pushdown {
-      padding: 1rem;
-      max-width: 100%;
+   .dropdown__content {
+      padding-bottom: 10px;
+      padding-top: 10px;
 
-      .dropdown__content {
+      .dropdown__h4 {
+         color: #80808c;
+         border-bottom: 1px solid #80808c;
+         font-size: 12px;
          padding-bottom: 10px;
-         padding-top: 10px;
+         text-transform: uppercase;
+      }
 
-         .dropdown__h4 {
-            color: #80808c;
-            border-bottom: 1px solid #80808c;
-            font-size: 12px;
-            padding-bottom: 10px;
-            text-transform: uppercase;
-         }
-
-         .dropdown__items {
-            padding: 5px 0;
-            font-size: 13px;
-         }
+      .dropdown__items {
+         padding: 5px 0;
+         font-size: 13px;
       }
    }
 
@@ -41,7 +39,9 @@
 }
 
 .opened {
-   height: 100%;
+   display: block;
+   // height: 100%;
+   // width: 100%;
    -webkit-transition: height, 0.5s linear;
    -moz-transition: height, 0.5s linear;
    -ms-transition: height, 0.5s linear;
