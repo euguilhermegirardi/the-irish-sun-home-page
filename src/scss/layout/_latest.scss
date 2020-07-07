@@ -3,8 +3,13 @@
    flex-direction: column;
    border-bottom: 1px solid black;
 
-   .latest__img {
-      height: 230px;
+   .latest__img-container {
+      display: flex;
+
+      .latest__img {
+         height: auto;
+         max-width: 100%;
+      }
    }
 
    .latest__span {
