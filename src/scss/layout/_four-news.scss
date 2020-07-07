@@ -9,6 +9,10 @@
       padding: 5px 0;
       border-bottom: 2px solid #eaeeef;
 
+      @media screen and (min-width: 500px) {
+         align-items: center;
+      }
+
       .four-news__img {
          width: 120px;
          height: 80px;
@@ -18,6 +22,10 @@
          margin-left: 8px;
          font-size: 1.3rem;
          line-height: 1.7rem;
+
+         @media screen and (min-width: 500px) {
+            font-size: 1.6rem;
+         }
 
          span {
             text-transform: uppercase;
