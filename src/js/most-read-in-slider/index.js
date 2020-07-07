@@ -10,11 +10,11 @@ sliders.forEach(slider => {
       swipeAngle: false,
       speed: 300,
       preventScrollOnTouch: "force",
-      // autoWidth: true
       responsive: {
          500: {
             controls: true,
-            fixedWidth: false
+            controlsText: ['<', '>'],
+            fixedWidth: false,
          }
       }
    });

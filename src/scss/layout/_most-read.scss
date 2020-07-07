@@ -60,3 +60,40 @@
       height: 22.6rem;
    }
 }
+
+.tns-controls {
+   display: flex;
+   justify-content: space-between;
+   height: 8px;
+}
+
+[data-controls="prev"] {
+   width: 3rem;
+   height: 6rem;
+   color: #fff;
+   background-color: rgba(156, 115, 193, 0.8);
+   border: none;
+   border-radius: 0 3rem 3rem 0;
+   position: relative;
+   left: 0rem;
+   top: 9rem;
+   z-index: 10000;
+   font-weight: 600;
+   font-size: 2rem;
+   padding-right: 7px;
+}
+
+[data-controls="next"] {
+   width: 3rem;
+   height: 6rem;
+   color: #fff;
+   background-color: rgba(156, 115, 193, 0.8);
+   border: none;
+   border-radius: 3rem 0rem 0rem 3rem;
+   position: relative;
+   top: 9rem;
+   z-index: 10000;
+   font-weight: 600;
+   font-size: 2rem;
+   padding-left: 7px;
+}
