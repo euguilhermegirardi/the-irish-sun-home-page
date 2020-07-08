@@ -22,6 +22,11 @@
             margin: 0 1.5rem;
             width: 12%;
             height: 12%;
+
+            @media screen and (min-width: 500px) {
+               width: 9%;
+               height: 9%;
+            }
          }
       }
    }

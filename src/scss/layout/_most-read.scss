@@ -54,7 +54,8 @@
    color: #24588c !important;
 }
 
-#tns1 > .tns-item {
+#tns1 > .tns-item,
+#tns2 > .tns-item {
    @media screen and (min-width: 500px) {
       width: 15.8rem !important;
       height: 22.6rem;
