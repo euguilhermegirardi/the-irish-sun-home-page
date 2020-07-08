@@ -1,3 +1,9 @@
+.tns-outer {
+   @media screen and (min-width: 676px) {
+      display: none;
+   }
+}
+
 .slider {
    display: flex;
    align-items: center;
