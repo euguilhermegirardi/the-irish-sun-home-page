@@ -31,16 +31,6 @@
       }
    }
 
-   .most-read__slider,
-   #tns3 > .tns-item,
-   .most-read__slider,
-   #tns2 > .tns-item {
-      @media screen and (min-width: 500px) {
-         width: 15.8rem !important;
-         height: 22.6rem;
-      }
-   }
-
    .most-read__card {
       background-color: #fff;
       border: none;
@@ -67,6 +57,14 @@
             }
          }
       }
+   }
+}
+
+#tns1 > .tns-item,
+#tns2 > .tns-item {
+   @media screen and (min-width: 500px) {
+      width: 15.8rem !important;
+      height: 22.6rem;
    }
 }
 
