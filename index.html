@@ -172,7 +172,10 @@
                      />
                   </div>
                   <div class="navbar-desktop__search">
-                     <div class="navbar-desktop__search-icons">
+                     <div
+                        class="navbar-desktop__search-icons"
+                        data-target-id="popup-1"
+                     >
                         <h4>Irish Sun</h4>
                         <img
                            class="navbar-desktop__svg"
@@ -180,7 +183,27 @@
                            alt="circle-down-svg"
                         />
                      </div>
-                     <div class="navbar-desktop__search-icons">
+
+                     <!-- _popup-menu.scss -->
+                     <div class="popup-box" id="popup-1">
+                        <ul class="popup-box__ul">
+                           <li class="popup-box__li">US Edition</li>
+                           <li class="popup-box__li">UK Edition</li>
+                           <li class="popup-box__li">Scottish Sun</li>
+                           <li class="popup-box__li">Dream Team</li>
+                        </ul>
+
+                        <img
+                           class="popup-box__svg popup-box__svg--menu"
+                           src="./dist/minified/assets/SVG/cross.svg"
+                           alt="close.svg"
+                        />
+                     </div>
+
+                     <div
+                        class="navbar-desktop__search-icons"
+                        data-target-id="popup-2"
+                     >
                         <h4>Search</h4>
                         <img
                            class="navbar-desktop__svg"
@@ -189,9 +212,8 @@
                         />
                      </div>
 
-                     <!-- search-popup -->
-                     <div class="popup-box">
-                        <img class="popup-box__svg" src="" alt="" />
+                     <!-- _popup-box.scss -->
+                     <div class="popup-box" id="popup-2">
                         <form class="popup-box__form">
                            <input
                               class="popup-box__input"
@@ -204,6 +226,11 @@
                               value="Search"
                            />
                         </form>
+                        <img
+                           class="popup-box__svg"
+                           src="./dist/minified/assets/SVG/cross.svg"
+                           alt="close.svg"
+                        />
                      </div>
                   </div>
                </div>
