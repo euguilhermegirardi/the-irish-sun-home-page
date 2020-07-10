@@ -5,7 +5,7 @@ sliders.forEach(slider => {
       controls: false,
       container: slider,
       slideBy: "page",
-      items: 2,
+      items: 5,
       mouseDrag: true,
       swipeAngle: false,
       speed: 300,
