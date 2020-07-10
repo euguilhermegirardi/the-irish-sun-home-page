@@ -27,6 +27,10 @@
             font-size: 1.6rem;
          }
 
+         @media screen and (min-width: 675px) {
+            font-size: 1.8rem;
+         }
+
          span {
             text-transform: uppercase;
             color: #eb1701;

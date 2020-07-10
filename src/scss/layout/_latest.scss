@@ -30,6 +30,10 @@
          font-size: 1.7rem;
       }
 
+      @media screen and (min-width: 675px) {
+         font-size: 2.3rem;
+      }
+
       span {
          text-transform: uppercase;
          font-weight: 600;
@@ -44,6 +48,10 @@
       @media screen and (min-width: 500px) {
          font-size: 1.3rem;
       }
+
+      @media screen and (min-width: 675px) {
+         font-size: 1.5rem;
+      }
    }
 
    .latest__update {
@@ -51,6 +59,10 @@
 
       @media screen and (min-width: 500px) {
          font-size: 1.2rem;
+      }
+
+      @media screen and (min-width: 675px) {
+         font-size: 1.4rem;
       }
 
       span {
@@ -64,6 +76,11 @@
       img {
          margin-right: 2rem;
          margin-bottom: 5px;
+
+         @media screen and (min-width: 675px) {
+            width: 3.5rem;
+            height: 3.5rem;
+         }
       }
    }
 }

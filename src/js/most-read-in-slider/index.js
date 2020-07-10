@@ -14,7 +14,6 @@ sliders.forEach(slider => {
          500: {
             controls: true,
             controlsText: ['<', '>'],
-            // fixedWidth: false,
          }
       }
    });
