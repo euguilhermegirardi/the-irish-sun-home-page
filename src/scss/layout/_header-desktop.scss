@@ -4,6 +4,10 @@
    background-color: #2e2e33;
    height: 3rem !important;
 
+   @media screen and (max-width: 675px) {
+      display: none;
+   }
+
    .header-desktop__p {
       max-width: 660px;
       margin: 0 auto;

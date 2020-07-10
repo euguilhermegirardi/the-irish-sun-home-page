@@ -31,6 +31,16 @@
       }
    }
 
+   .most-read__slider,
+   #tns3 > .tns-item,
+   .most-read__slider,
+   #tns2 > .tns-item {
+      @media screen and (min-width: 500px) {
+         width: 15.8rem !important;
+         height: 22.6rem;
+      }
+   }
+
    .most-read__card {
       background-color: #fff;
       border: none;
@@ -66,14 +76,6 @@
 
 .most-read__span--irish-news {
    color: #24588c !important;
-}
-
-#tns1 > .tns-item,
-#tns2 > .tns-item {
-   @media screen and (min-width: 500px) {
-      width: 15.8rem !important;
-      height: 22.6rem;
-   }
 }
 
 .tns-controls {
