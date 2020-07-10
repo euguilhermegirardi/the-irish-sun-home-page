@@ -6,15 +6,19 @@
    height: 30rem;
    margin-bottom: 2.3rem;
 
-   header {
-      margin: 0;
-      padding-left: 1rem;
+   .most-read__header {
       background-color: #583b73;
-      color: #fff;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 37px;
-      text-transform: uppercase;
+
+      header {
+         margin: 0 auto;
+         padding-left: 1rem;
+         max-width: 660px;
+         color: #fff;
+         font-weight: 600;
+         font-size: 20px;
+         line-height: 37px;
+         text-transform: uppercase;
+      }
    }
 
    .most-read__card {
@@ -51,6 +55,17 @@
    @media screen and (min-width: 500px) {
       width: 15.8rem !important;
       height: 22.6rem;
+   }
+}
+
+#tns1-ow,
+#tns2-ow {
+   max-width: 660px;
+   margin: 0 auto;
+   padding: 10px;
+
+   @media screen and (min-width: 980px) {
+      max-width: 966px;
    }
 }
 
