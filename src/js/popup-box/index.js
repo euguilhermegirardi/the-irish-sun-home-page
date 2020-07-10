@@ -1,6 +1,6 @@
 const search = document.querySelectorAll('.navbar-desktop__search-icons');
 const popup = document.querySelectorAll('.popup-box');
-const close = document.querySelectorAll('.popup-box__svg')
+const close = document.querySelectorAll('.popup-box__svg');
 
 search.forEach(element => {
    element.addEventListener('click', (e) => {

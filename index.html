@@ -7,7 +7,7 @@
          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
          rel="stylesheet"
       />
-      <link rel="stylesheet" href="dist/minified/main.css?cb=1594370509231" />
+      <link rel="stylesheet" href="dist/minified/main.css?cb=1594381434464" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
@@ -24,12 +24,22 @@
                   src="dist/minified/assets/SVG/search.svg"
                   alt="search.svg"
                />
-
-               <!-- _search-dropdown.scss -->
-               <div class="dropdown" id="dropdown-1">
-                  <input class="pushdown search-dropdown__input" type="text" />
-               </div>
             </li>
+            <!-- _search-dropdown.scss -->
+            <div class="search-dropdown dropdown-popup" id="dropdown-1">
+               <form class="search-dropdown__form">
+                  <input
+                     class="search-dropdown__input"
+                     placeholder="Search The Sun"
+                     type="text"
+                  />
+               </form>
+               <img
+                  class="search-dropdown__svg"
+                  src="./dist/minified/assets/SVG/cross-white.svg"
+                  alt="close.svg"
+               />
+            </div>
 
             <li class="navbar__li">
                <img
@@ -45,90 +55,94 @@
                   src="dist/minified/assets/SVG/menu.svg"
                   alt="menu.svg"
                />
+            </li>
+            <!-- _dropdown.scss -->
+            <div class="dropdown dropdown-popup" id="dropdown-2">
+               <img
+                  class="search-dropdown__svg search-dropdown__svg--menu"
+                  src="./dist/minified/assets/SVG/cross-white.svg"
+                  alt="close.svg"
+               />
+               <div class="dropdown__content">
+                  <h4 class="dropdown__h4">Your Sun</h4>
+                  <p class="dropdown__items">Sign in</p>
+               </div>
 
-               <!-- _dropdown.scss -->
-               <div class="dropdown" id="dropdown-2">
-                  <div class="dropdown__content">
-                     <h4 class="dropdown__h4">Your Sun</h4>
-                     <p class="dropdown__items">Sign in</p>
-                  </div>
+               <div class="dropdown__content">
+                  <h4 class="dropdown__h4">Editions</h4>
+                  <ul>
+                     <li class="dropdown__items">US Edition</li>
+                     <li class="dropdown__items">UK Edition</li>
+                     <li class="dropdown__items">Scottish Sun</li>
+                     <li class="dropdown__items">Dream Team</li>
+                  </ul>
+               </div>
 
-                  <div class="dropdown__content">
-                     <h4 class="dropdown__h4">Editions</h4>
-                     <ul>
-                        <li class="dropdown__items">US Edition</li>
-                        <li class="dropdown__items">UK Edition</li>
-                        <li class="dropdown__items">Scottish Sun</li>
+               <div class="dropdown__content">
+                  <h4 class="dropdown__h4">The Sun</h4>
+                  <div class="dropdown__content-flex">
+                     <ul class="dropdown__ul">
+                        <li class="dropdown__items">The Sun</li>
+                        <li class="dropdown__items">The Scottish Sun</li>
                         <li class="dropdown__items">Dream Team</li>
+                        <li class="dropdown__items">Fabulous</li>
+                     </ul>
+                     <ul>
+                        <li class="dropdown__items">Sun Favorite</li>
+                        <li class="dropdown__items">Sun Motors</li>
+                        <li class="dropdown__items">Sun Bingo</li>
+                        <li class="dropdown__items">Sun Gifts</li>
                      </ul>
                   </div>
+               </div>
 
-                  <div class="dropdown__content">
-                     <h4 class="dropdown__h4">The Sun</h4>
-                     <div class="dropdown__content-flex">
-                        <ul class="dropdown__ul">
-                           <li class="dropdown__items">The Sun</li>
-                           <li class="dropdown__items">The Scottish Sun</li>
-                           <li class="dropdown__items">Dream Team</li>
-                           <li class="dropdown__items">Fabulous</li>
-                        </ul>
-                        <ul>
-                           <li class="dropdown__items">Sun Favorite</li>
-                           <li class="dropdown__items">Sun Motors</li>
-                           <li class="dropdown__items">Sun Bingo</li>
-                           <li class="dropdown__items">Sun Gifts</li>
-                        </ul>
-                     </div>
-                  </div>
-
-                  <div class="dropdown__content">
-                     <h4 class="dropdown__h4">News Corp</h4>
-                     <div class="dropdown__content-flex">
-                        <ul class="dropdown__ul">
-                           <li class="dropdown__items">WSJ.com</li>
-                           <li class="dropdown__items">New York Post</li>
-                           <li class="dropdown__items">The Australian</li>
-                           <li class="dropdown__items">News.com.au</li>
-                        </ul>
-                        <ul>
-                           <li class="dropdown__items">Story</li>
-                           <li class="dropdown__items">Harper Collins</li>
-                           <li class="dropdown__items">Realtor.com</li>
-                        </ul>
-                     </div>
-                  </div>
-
-                  <div class="dropdown__content">
-                     <h4 class="dropdown__h4">Services</h4>
-                     <div class="dropdown__content-flex">
-                        <ul class="dropdown__ul">
-                           <li class="dropdown__items">
-                              Sign Up to The Sun
-                           </li>
-                           <li class="dropdown__items">
-                              Terms and Conditions
-                           </li>
-                           <li class="dropdown__items">
-                              Editorial Complaints
-                           </li>
-                           <li class="dropdown__items">
-                              Clarifications and Corrections
-                           </li>
-                           <li class="dropdown__items">Syndication</li>
-                        </ul>
-                        <ul>
-                           <li class="dropdown__items">Advertising</li>
-                           <li class="dropdown__items">Contact Us</li>
-                           <li class="dropdown__items">Help Hub</li>
-                           <li class="dropdown__items">Cookie Settings</li>
-                           <li class="dropdown__items">
-                              Contact Preferences
-                           </li>
-                        </ul>
-                     </div>
+               <div class="dropdown__content">
+                  <h4 class="dropdown__h4">News Corp</h4>
+                  <div class="dropdown__content-flex">
+                     <ul class="dropdown__ul">
+                        <li class="dropdown__items">WSJ.com</li>
+                        <li class="dropdown__items">New York Post</li>
+                        <li class="dropdown__items">The Australian</li>
+                        <li class="dropdown__items">News.com.au</li>
+                     </ul>
+                     <ul>
+                        <li class="dropdown__items">Story</li>
+                        <li class="dropdown__items">Harper Collins</li>
+                        <li class="dropdown__items">Realtor.com</li>
+                     </ul>
                   </div>
                </div>
-            </li>
+
+               <div class="dropdown__content">
+                  <h4 class="dropdown__h4">Services</h4>
+                  <div class="dropdown__content-flex">
+                     <ul class="dropdown__ul">
+                        <li class="dropdown__items">
+                           Sign Up to The Sun
+                        </li>
+                        <li class="dropdown__items">
+                           Terms and Conditions
+                        </li>
+                        <li class="dropdown__items">
+                           Editorial Complaints
+                        </li>
+                        <li class="dropdown__items">
+                           Clarifications and Corrections
+                        </li>
+                        <li class="dropdown__items">Syndication</li>
+                     </ul>
+                     <ul>
+                        <li class="dropdown__items">Advertising</li>
+                        <li class="dropdown__items">Contact Us</li>
+                        <li class="dropdown__items">Help Hub</li>
+                        <li class="dropdown__items">Cookie Settings</li>
+                        <li class="dropdown__items">
+                           Contact Preferences
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
          </ul>
       </nav>
 
@@ -757,6 +771,6 @@
       </footer>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-      <script src="dist/minified/all.js?cb=1594370509231"></script>
+      <script src="dist/minified/all.js?cb=1594381434464"></script>
    </body>
 </html>

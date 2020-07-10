@@ -1,25 +1,29 @@
 const icon = document.querySelectorAll('.navbar__li');
-const dropdown = document.querySelectorAll('.dropdown');
+const dropdown = document.querySelectorAll('.dropdown-popup');
+const closeDropdown = document.querySelectorAll('.search-dropdown__svg');
 
-
-icon.forEach(element=> {
+icon.forEach(element => {
    element.addEventListener('click', (e) => {
       e.preventDefault();
 
-      // close all before open one dropdown.
       dropdown.forEach(element => {
-         element.classList.remove('opened');
-         // console.log('removed')
+         element.classList.remove('open')
+         console.log('closing...')
       });
 
-      let showDiv = document.getElementById(element.dataset.targetId)
-      showDiv.classList.toggle('opened');
-
-      if(showDiv === classList.includes('opened')) {
-         console.log('wasda')
-      } return;
-
+      let openDropdown = document.getElementById(element.dataset.targetId)
+      openDropdown.classList.add('open')
    })
+})
+
+closeDropdown.forEach(element => {
+   element.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      dropdown.forEach(element => {
+         element.classList.remove('open');
+      })
+   });
 })
 
 

@@ -1,15 +1,22 @@
 .dropdown {
-   display: none;
-   position: absolute;
-   left: 0;
-   top: 7rem;
-   width: 100%;
-   z-index: 20;
-   overflow-y: scroll;
+   display: flex;
+   flex-direction: column;
    padding: 1.2rem;
    background-color: #2e2e33;
    color: #fff;
+   width: 100%;
+
+   opacity: 0;
+   position: absolute;
+   right: 0;
+   top: 5.3rem;
    transition: height, 0.5s linear;
+
+   .search-dropdown__svg--menu {
+      align-self: flex-end;
+      width: 2rem;
+      height: 2rem;
+   }
 
    .dropdown__content {
       padding-bottom: 10px;
@@ -36,15 +43,4 @@
          width: 50%;
       }
    }
-}
-
-.opened {
-   display: block;
-   // height: 100%;
-   // width: 100%;
-   -webkit-transition: height, 0.5s linear;
-   -moz-transition: height, 0.5s linear;
-   -ms-transition: height, 0.5s linear;
-   -o-transition: height, 0.5s linear;
-   transition: height, 0.5s linear;
 }
