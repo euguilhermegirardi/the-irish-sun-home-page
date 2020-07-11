@@ -50,6 +50,12 @@
    }
 }
 
+#tns1-mw,
+#tns2-mw {
+   max-width: 660px;
+   margin: 0 auto;
+}
+
 #tns1 > .tns-item,
 #tns2 > .tns-item {
    @media screen and (min-width: 500px) {
@@ -60,10 +66,6 @@
 
 #tns1-ow,
 #tns2-ow {
-   max-width: 660px;
-   margin: 0 auto;
-   padding: 10px;
-
    @media screen and (min-width: 980px) {
       max-width: 966px;
    }
@@ -81,6 +83,8 @@
    display: flex;
    justify-content: space-between;
    height: 8px;
+   max-width: 660px;
+   margin: 0 auto;
 }
 
 [data-controls="prev"] {
