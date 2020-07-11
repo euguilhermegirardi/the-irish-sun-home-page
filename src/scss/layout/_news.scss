@@ -4,6 +4,10 @@
    margin: 1.5rem 0;
    padding: 0 1rem;
 
+   @media screen and (min-width: 980px) {
+      display: none;
+   }
+
    .news__h2 {
       margin: 1.2rem 0 8px 0;
 
