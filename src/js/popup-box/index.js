@@ -8,11 +8,9 @@ search.forEach(element => {
 
       popup.forEach(element => {
          element.classList.remove('open')
-         // console.log('asdasd')
       });
 
       let open = document.getElementById(element.dataset.targetId)
-      // console.log(open);
       open.classList.add('open');
    });
 })
