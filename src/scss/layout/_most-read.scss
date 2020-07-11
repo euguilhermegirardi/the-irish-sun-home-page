@@ -50,27 +50,6 @@
    }
 }
 
-#tns1-mw,
-#tns2-mw {
-   max-width: 660px;
-   margin: 0 auto;
-}
-
-#tns1 > .tns-item,
-#tns2 > .tns-item {
-   @media screen and (min-width: 500px) {
-      width: 15.8rem !important;
-      height: 22.6rem;
-   }
-}
-
-#tns1-ow,
-#tns2-ow {
-   @media screen and (min-width: 980px) {
-      max-width: 966px;
-   }
-}
-
 .most-read__header--irish-news {
    background-color: #24588c !important;
 }
@@ -79,12 +58,18 @@
    color: #24588c !important;
 }
 
+// TINY SLIDER CONFIG
+
 .tns-controls {
    display: flex;
    justify-content: space-between;
    height: 8px;
    max-width: 660px;
    margin: 0 auto;
+
+   @media screen and (min-width: 980px) {
+      max-width: 966px;
+   }
 }
 
 [data-controls="prev"] {
@@ -117,3 +102,28 @@
    font-size: 2rem;
    padding-left: 7px;
 }
+
+#tns1-mw,
+#tns2-mw {
+   max-width: 660px;
+   margin: 0 auto;
+
+   @media screen and (min-width: 980px) {
+      max-width: 966px;
+   }
+}
+
+#tns1 > .tns-item,
+#tns2 > .tns-item {
+   @media screen and (min-width: 500px) {
+      width: 15.8rem !important;
+      height: 22.6rem;
+   }
+}
+
+// #tns1-ow,
+// #tns2-ow {
+//    @media screen and (min-width: 980px) {
+//       max-width: 966px;
+//    }
+// }
