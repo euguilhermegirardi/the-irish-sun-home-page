@@ -25,9 +25,13 @@
 
 #tns3-mw {
    @media screen and (min-width: 675px) {
-      max-width: 640px;
+      max-width: 662px;
       margin: 0 auto;
       border-left: 1px solid #ccc;
       border-right: 1px solid #ccc;
+   }
+
+   @media screen and (min-width: 980px) {
+      max-width: 966px;
    }
 }
