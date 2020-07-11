@@ -1,10 +1,12 @@
 .navbar-desktop {
+   display: none;
    padding: 1rem;
    color: #2e2e33;
    position: relative;
 
-   @media screen and (max-width: 675px) {
-      display: none;
+   @media screen and (min-width: 675px) {
+      display: block;
+      margin-bottom: -5.5rem;
    }
 
    .navbar-desktop__header {
