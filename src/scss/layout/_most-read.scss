@@ -18,6 +18,10 @@
          font-size: 20px;
          line-height: 37px;
          text-transform: uppercase;
+
+         @media screen and (min-width: 980px) {
+            max-width: 966px;
+         }
       }
    }
 
@@ -120,10 +124,3 @@
       height: 22.6rem;
    }
 }
-
-// #tns1-ow,
-// #tns2-ow {
-//    @media screen and (min-width: 980px) {
-//       max-width: 966px;
-//    }
-// }
