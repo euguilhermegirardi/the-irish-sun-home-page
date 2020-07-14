@@ -27,9 +27,17 @@
 
          span {
             text-transform: uppercase;
-            color: #eb1701;
+            color: #24588c;
             padding-right: 3px;
          }
+      }
+   }
+}
+
+.latest__four-news--first-row {
+   .latest__four-news-h3 {
+      span {
+         color: #eb1701;
       }
    }
 }

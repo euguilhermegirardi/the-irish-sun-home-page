@@ -113,3 +113,19 @@
       margin-right: 1.5rem;
    }
 }
+
+.latest--first-row,
+.latest--last-row {
+   margin-bottom: 3rem;
+
+   .latest__h1,
+   .latest__four-news-h3 {
+      span {
+         color: #eb1701 !important;
+      }
+   }
+}
+
+.latest--last-row {
+   margin-bottom: 0;
+}
