@@ -107,8 +107,8 @@
    padding-left: 7px;
 }
 
-#tns1-mw,
-#tns2-mw {
+#tns2-mw,
+#tns3-mw {
    max-width: 660px;
    margin: 0 auto;
 
@@ -117,8 +117,8 @@
    }
 }
 
-#tns1 > .tns-item,
-#tns2 > .tns-item {
+#tns2 > .tns-item,
+#tns3 > .tns-item {
    @media screen and (min-width: 500px) {
       width: 15.8rem !important;
       height: 22.6rem;

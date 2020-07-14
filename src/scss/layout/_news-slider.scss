@@ -12,6 +12,7 @@
       font-weight: 800;
       font-size: 1.3rem;
       margin: 8px 0;
+      cursor: pointer;
    }
 
    .active {
@@ -23,7 +24,7 @@
    display: none;
 }
 
-#tns3-mw {
+#tns1-mw {
    @media screen and (min-width: 675px) {
       max-width: 662px;
       margin: 0 auto;
