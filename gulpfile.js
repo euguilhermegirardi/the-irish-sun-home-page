@@ -17,6 +17,11 @@ const files = {
   imgPath: 'src/assets/**'
 }
 
+// HTML task
+function copyHTML() {
+   return src('src/*.html').pipe(gulp.dest('dist'));
+}
+
 // Sass task
 function scssTask() {
   return src(files.scssPath)
@@ -62,7 +67,7 @@ function watchTask() {
 
 // Default task
 exports.default = series(
-  parallel(scssTask, jsTask, imgTask),
+  parallel(copyHTML, scssTask, jsTask, imgTask),
   catchBustTask,
   watchTask
 )
