@@ -10,14 +10,15 @@
 
    .latest__img-container {
       display: flex;
+      justify-content: center;
 
       @media screen and (min-width: 980px) {
          margin-bottom: 1rem;
       }
 
       .latest__img {
-         height: auto;
-         max-width: 100%;
+         height: 210px;
+         width: 335px;
       }
    }
 
@@ -109,9 +110,9 @@
       }
    }
 
-   .latest__main {
-      margin-right: 1.5rem;
-   }
+   // .latest__main {
+   //    margin-right: 1.5rem;
+   // }
 }
 
 .latest--first-row,
