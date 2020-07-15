@@ -1,3 +1,4 @@
+const gulp = require('gulp');
 var { src, dest, watch, series, parallel } = require('gulp');
 autoprefixer = require('autoprefixer');
 cssnano = require('cssnano');
@@ -15,11 +16,6 @@ const files = {
   scssPath: 'src/scss/**/*.scss',
   jsPath: 'src/js/**/*.js',
   imgPath: 'src/assets/**'
-}
-
-// HTML task
-function copyHTML() {
-   return src('src/*.html').pipe(gulp.dest('dist'));
 }
 
 // Sass task
@@ -56,18 +52,18 @@ const cbString = new Date().getTime();
 function catchBustTask() {
   return src(['index.html'])
     .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
-    .pipe(dest('.'));
+    .pipe(dest('dist/minified/'));
 }
 
 //Watch task
 function watchTask() {
-  watch([files.scssPath, files.jsPath, files.imgPath],
+  watch([ files.scssPath, files.jsPath, files.imgPath],
     parallel(scssTask, jsTask, imgTask));
 }
 
 // Default task
 exports.default = series(
-  parallel(copyHTML, scssTask, jsTask, imgTask),
+  parallel(scssTask, jsTask, imgTask),
   catchBustTask,
   watchTask
 )
