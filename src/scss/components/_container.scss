@@ -8,3 +8,9 @@
       max-width: 966px;
    }
 }
+
+.container--desktop {
+   @media screen and (max-width: 500px) {
+      display: none;
+   }
+}
