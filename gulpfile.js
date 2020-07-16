@@ -1,4 +1,3 @@
-const gulp = require('gulp');
 var { src, dest, watch, series, parallel } = require('gulp');
 autoprefixer = require('autoprefixer');
 cssnano = require('cssnano');
